@@ -4,6 +4,8 @@ This program assigns subjects to professors, taking into consideration their pre
 
 ## The program takes two inout files.
 
+(Please see the sample files provided.)
+
 ### Preferences file (e.g., prefs.txt)
 
 Each line of the preferences file has: name, min_hours, max_hours, 6 preferences, where min_hours (max_hours) is the minimum (maximum) number of hours per week the professor will be assigned. Each preference consists of a weignt (positive integer) and a combination of at most 3 subjects the professor would like to teach. Lower weight for a preference signifies higher preference for the combination of subjects. Sum of the weights of the 6 preferences is to be 15.
