@@ -2,7 +2,7 @@
 
 This program assigns subjects to professors, taking into consideration their preferences. The program uses simulated annealing to optimise a cost function associated with an assignment.
 
-## The program takes two inout files.
+## The program takes two input files.
 
 (Please see the sample files provided.)
 
