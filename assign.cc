@@ -3,16 +3,12 @@
 // This file is a part of the project ASSIGN - a program to allocate disciplinas
 // (subjects) to professors. ASSIGN project is released under the GPL V3 license.
 
-// Some problems to be solved
+// Some problems (specific to my department) to be solved
 
 // 1. There are turmas (sections) with different codes with schedule conflict,
-// e.g., N and N1. They cannot be assigned the same code because some people may
-// have preference for N over N1. Chanding N1 to Y can potentially lead to
-// solutions that are not feasible; e.g., the program may assign 38N and 38Y to
-// a person, since it will not detect schedule conflict between 38N and 38Y. Of
-// course, this will be rare since 38N and 38Y will never be a person's
-// preference. One possible solution is to have groups of conflicting codes
-// instead of assuming that codes are mutually non-conflicting.
+// e.g., 38N and 38N1. Hence more detailed schedule conflict information must
+// be taken into consideration. For example, a graph on codes as vertices, with
+// two codes being adjacent if they have schedule conflict.
 
 // 2. function cost_map_add: The cost of i-th preference for 0 <= i <= 5 is x +
 // w_i y, where x and y depend as described next on the min hours the prof is
