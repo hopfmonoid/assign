@@ -16,7 +16,7 @@ Each line has 4 fields: id (subject id), code (code of the turma/section for the
 
 ## To run the program:
 
-assign -p prefs.txt -d disc.txt -z number
+assign -p prefs.txt -d disc.txt -z seed
 
 The parameter passed with -z option is a seed for the pseudo random number generator. This parameter is optional, but it helps if we want to repeat the results.
 
